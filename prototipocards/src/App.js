@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Cards from "./components/Cards";
 
-function App() {
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cards
+        img="https://media.discordapp.net/attachments/935611068934418472/944197874185547786/20220218_084447.jpg?width=507&height=676"
+        nome="Nairon Luiz"
+        cargo="Frontend Developer"
+        tel="(61)9-98454560"
+        email="nairon.luiz@gmail.com"
+      />
+
+      <Cards
+        img="https://media.discordapp.net/attachments/935611068934418472/944197874185547786/20220218_084447.jpg?width=507&height=676"
+        nome="Nairon Luiz"
+        cargo="Frontend Developer"
+        tel="(61)9-98454560"
+        email="nairon.luiz@gmail.com"
+      />
+
+      <Cards
+        img="https://media.discordapp.net/attachments/935611068934418472/944197874185547786/20220218_084447.jpg?width=507&height=676"
+        nome="Nairon Luiz"
+        cargo="Frontend Developer"
+        tel="(61)9-98454560"
+        email="nairon.luiz@gmail.com"
+      />
     </div>
   );
-}
+};
 
 export default App;
