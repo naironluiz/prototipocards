@@ -1,0 +1,60 @@
+:root {
+  --cardbg: rgba(229, 229, 229, 0.45);
+  --segundacor: rgba(0, 0, 0, 0.5);
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 2rem;
+  height: 174px;
+}
+
+.container {
+  display: flex;
+  background-color: var(--cardbg);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.imagemPerfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 2rem 1rem;
+}
+
+.menuBtn {
+  width: 13.52px;
+  height: 6px;
+  margin: 0.9rem 0.9rem;
+}
+
+.infoContainer {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 104px;
+}
+
+.cargo {
+  color: var(--segundacor);
+  width: 62px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.nome {
+  font-size: 0.9rem;
+}
+
+.tel {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.email {
+  font-size: 12px;
+}
