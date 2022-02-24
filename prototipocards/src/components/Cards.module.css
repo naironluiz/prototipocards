@@ -3,21 +3,21 @@
   --segundacor: rgba(0, 0, 0, 0.5);
 }
 
-.cardContainer {
+.card {
   display: grid;
-  margin: 1.1rem 1.1rem;
-  grid-template-columns: 1fr;
-  max-width: 388px;
+  margin: 1.1rem 0 1.1rem 1.1rem;
+  grid-template-columns: minmax(388px, 1fr);
   column-gap: 20rem;
   row-gap: 20rem;
   /*  height: 174px; */
 }
 
-.container {
-  display: flex;
-  gap: 0.9rem;
+.cardContainer {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1.5fr;
   background-color: var(--cardbg);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  max-width: 388px;
   border-radius: 5%;
 }
 
@@ -51,7 +51,6 @@
 .cargo {
   color: var(--segundacor);
   width: 62px;
-  text-decoration: none;
   font-weight: 700;
   font-size: 0.8rem;
 }
@@ -64,4 +63,39 @@
 .email {
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+@media screen and (min-width: 500px) {
+  .cardContainer {
+    display: block;
+    width: 288px;
+    height: 353px;
+  }
+  .imagemPerfil {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .infoContainer {
+    justify-content: center;
+    text-align: center;
+  }
+  .nome {
+    font-size: 24px;
+  }
+  .cargo {
+    width: inherit;
+    font-size: 1rem;
+  }
+
+  .tel,
+  .email {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

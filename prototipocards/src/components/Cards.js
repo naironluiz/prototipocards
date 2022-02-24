@@ -2,8 +2,8 @@ import styles from "./Cards.module.css";
 
 const Cards = (props) => {
   return (
-    <div className={styles.cardContainer}>
-      <div className={styles.container}>
+    <div className={styles.card}>
+      <div className={styles.cardContainer}>
         <button className={styles.menuBtn}>...</button>
 
         <img
