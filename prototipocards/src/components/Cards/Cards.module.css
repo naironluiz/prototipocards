@@ -3,22 +3,19 @@
   --segundacor: rgba(0, 0, 0, 0.5);
 }
 
-.card {
-  display: grid;
+.cards {
+  display: flex;
+  flex-direction: column;
   margin: 1.1rem 0 1.1rem 1.1rem;
-  grid-template-columns: minmax(388px, 1fr);
-  column-gap: 20rem;
-  row-gap: 20rem;
+
   /*  height: 174px; */
 }
 
 .cardContainer {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 1.5fr;
+  display: flex;
   background-color: var(--cardbg);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-  max-width: 388px;
-  border-radius: 5%;
+
+  background-color: aliceblue;
 }
 
 .imagemPerfil {
@@ -66,7 +63,14 @@
 }
 
 @media screen and (min-width: 500px) {
+  .megawrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .cardContainer {
+    margin-top: 2.5 rem;
+
     display: block;
     width: 288px;
     height: 353px;

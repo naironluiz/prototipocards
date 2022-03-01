@@ -5,3 +5,21 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
